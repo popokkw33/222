@@ -154,13 +154,13 @@ echo -e "[ ${green}INFO${NC} ] Processing updating server...... "
 echo -e ""
 echo -e "$yellow COPY Username GITHUB DI BAWAH INI$NC"
 echo -e""
-echo -e "$yellow Username :👉  HssPunya93  👈$NC"
+echo -e "$yellow Username :👉  bagusid93  👈$NC"
 echo -e""
 echo -e "$yellow PASTEKAN Username GITHUB DI BAWAH INI$NC"
 echo -e ""
 Save_And_Exit
 fi
-link="https://raw.githubusercontent.com/HssPunya93/userbackup/main/$NameUser/$NameUser.zip"
+link="https://raw.githubusercontent.com/bagusid93/userbackup/main/$NameUser/$NameUser.zip"
 sleep 1
 echo -e "[ ${red}INFO${NC} ] Backup done "
 sleep 1
@@ -196,7 +196,7 @@ function restore2(){
 cd
 read -rp "Enter Name File Your Backup  : " -e NameUser
 
-cekdata=$(curl -sS https://raw.githubusercontent.com/HssPunya93/userbackup/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
+cekdata=$(curl -sS https://raw.githubusercontent.com/bagusid93/userbackup/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
 
 [[ "$cekdata" = "404" ]] && {
 red "Data not found / you never backup"
@@ -209,7 +209,7 @@ echo -e "[ ${GREEN}INFO${NC} ] • Restore Data..."
 read -rp "Password File: " -e InputPass
 echo -e "[ ${GREEN}INFO${NC} ] • Downloading data.."
 mkdir -p /root/backup
-wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/HssPunya93/userbackup/main/$NameUser/$NameUser.zip" &> /dev/null
+wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/bagusid93/userbackup/main/$NameUser/$NameUser.zip" &> /dev/null
 echo -e "[ ${GREEN}INFO${NC} ] • Getting your data..."
 unzip -P $InputPass /root/backup/backup.zip &> /dev/null
 echo -e "[ ${GREEN}INFO${NC} ] • Starting to restore data..."
