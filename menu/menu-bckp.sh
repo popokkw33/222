@@ -110,7 +110,7 @@ zip -rP $InputPass $NameUser.zip backup > /dev/null 2>&1
 ##############++++++++++++++++++++++++#############
 LLatest=`date`
 Get_Data () {
-git clone https://github.com/https://github.com/HssPunya93/userbackup.git /root/user-backup/ &> /dev/null
+git clone https://github.com/bagusid93/userbackup.git /root/user-backup/ &> /dev/null
 }
 
 Mkdir_Data () {
@@ -130,15 +130,15 @@ mv /root/$NameUser.zip /root/user-backup/$NameUser/
 
 Save_And_Exit () {
     cd /root/user-backup
-    git config --global user.email "putrameratus2@gmail.com" &> /dev/null
-    git config --global user.name "HssPunya93" &> /dev/null
+    git config --global user.email "imisbgs@gmail.com" &> /dev/null
+    git config --global user.name "bagusid93" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m $NameUser &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/HssPunya93/userbackup.git
-    git push -f https://github.com/HssPunya93/userbackup.git &> /dev/null
+    git remote add origin https://github.com/bagusid93/userbackup.git
+    git push -f https://github.com/bagusid93/userbackup.git &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
