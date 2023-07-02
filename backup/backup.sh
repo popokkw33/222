@@ -108,7 +108,6 @@ cp -r /etc/group /root/backup/ &> /dev/null
 cp -r /etc/shadow /root/backup/ &> /dev/null
 cp -r /etc/gshadow /root/backup/ &> /dev/null
 cp -r /etc/ppp/chap-secrets /root/backup/chap-secrets &> /dev/null
-cp -r /var/lib/ /root/backup &> /dev/null
 cp -r /etc/xray /root/backup/xray &> /dev/null
 cp -r /etc/per /root/backup/per &> /dev/null
 #cp -r /root/nsdomain backup/nsdomain &> /dev/null
