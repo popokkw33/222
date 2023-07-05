@@ -156,12 +156,12 @@ mkdir -p /var/lib >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 clear
 echo ""
-wget -q https://raw.githubusercontent.com/HssPunya93/hss/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/sibeesans/hss/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-wget -q https://raw.githubusercontent.com/HssPunya93/hss/main/api.sh;chmod +x api.sh;./api.sh
+wget -q https://raw.githubusercontent.com/sibeesans/hss/main/api.sh;chmod +x api.sh;./api.sh
 clear
-wget -q https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/HssPunya93;chmod +x HssPunya93;./HssPunya93
+wget -q https://raw.githubusercontent.com/sibeesans/hss/main/ssh/HssPunya93;chmod +x HssPunya93;./HssPunya93
 rm HssPunya93
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
@@ -184,12 +184,12 @@ echo "IP=$pp" > /var/lib/ipvps.conf
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
 echo -e "Random Subdomain/Domain is used"
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 fi
@@ -227,21 +227,21 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #install Backup
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install BACKUP           $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green       Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
 #install file
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -249,7 +249,7 @@ echo -e "$green      Install FILE                $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 #install slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -257,7 +257,7 @@ echo -e "$green      Install SLOWDNS                $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/wireguard/installsl.sh && chmod +x installsl.sh && ./installsl.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/wireguard/installsl.sh && chmod +x installsl.sh && ./installsl.sh
 clear
 sleep 2
 #install ssh ohp
@@ -266,9 +266,9 @@ echo -e "$green       Install OHP               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/HssPunya93/hss/main/OPENVPN/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://raw.githubusercontent.com/sibeesans/hss/main/OPENVPN/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 clear
-wget -q https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/notif.sh;chmod +x notif.sh;./notif.sh
+wget -q https://raw.githubusercontent.com/sibeesans/hss/main/ssh/notif.sh;chmod +x notif.sh;./notif.sh
 sleep 3
 clear
 #install limit xray
@@ -277,7 +277,7 @@ echo -e "$green       Install Limit Xray               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q https://raw.githubusercontent.com/HssPunya93/hss/main/ssh/limit.sh;chmod +x limit.sh;./limit.sh
+wget -q https://raw.githubusercontent.com/sibeesans/hss/main/ssh/limit.sh;chmod +x limit.sh;./limit.sh
 sleep 3
 clear
 cat> /root/.profile << END
@@ -305,7 +305,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/HssPunya93/hss/main/versi )
+serverV=$( curl -sS https://raw.githubusercontent.com/sibeesans/hss/main/versi )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
