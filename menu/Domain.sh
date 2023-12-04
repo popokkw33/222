@@ -1,12 +1,11 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	Papada'an-Store
+# //	Author:	MAJUMUNDUR-Store
 # //	Dscription: Xray Menu Management
-# //	email: putrameratus2@gmail.com
-# //  telegram: https://t.me/Cibut2d
+# //	email: Muhammadrizqifathoni25@gmail.com
 # //====================================================
-# // font color configuration | PAPADA'AN STORE AUTOSCRIPT
+# // font color configuration | Tested STORE AUTOSCRIPT
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
@@ -55,13 +54,13 @@ function add-domain() {
     menu
 }
 add-ns() {
-    DOMAINNS="ppnstore.xyz"
+    DOMAINNS="smk7semarang.my.id"
     DAOMIN=$(cat /etc/xray/domain)
     SUB=$(tr </dev/urandom -dc a-z0-9 | head -c6)
     SUB_DOMAIN=${SUB}."ppnstore.xyz"
     NS_DOMAIN=ns.${SUB_DOMAIN}
-    CF_ID=putrameratus2@gmail.com
-    CF_KEY=69c3940d1896bc19698277104e783dab6cee4
+    CF_ID=muhammadrizqifathoni25@gmail.com
+    CF_KEY=a68492db2b2cf48294c90a6e22898977
     set -euo pipefail
     IP=$(wget -qO- ipinfo.io/ip)
     ZONE=$(
@@ -104,7 +103,7 @@ clear
 echo -e "\033[0;33m   ┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[0;33m   │\033[0m            \033[0;32mCHANGE DOMAIN VPS\033[0m             \033[0;33m|\033[0m"
 echo -e "\033[0;33m   └──────────────────────────────────────────┘\033[0m"
-echo -e "     ${RED}Autoscript Papada'an Store (multi port)${NC}"
+echo -e "     ${RED}Autoscript MAJUMUNDUR Store (multi port)${NC}"
 echo -e "${RED}Make sure the internet is smooth when installing the script${NC}"
 echo -e "───────────────────────────────────────────────────────"
 echo -e ""
